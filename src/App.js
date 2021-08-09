@@ -1,12 +1,15 @@
 import React from 'react';
 import './App.scss';
 
+import Header from './components/Header';
+import Characters from './components/Characters';
+
 const App = () => {
   return (
-    <div className="app">
-      <h1>React + Webpack + SASS</h1>
-      <p>My first project with React</p>
-    </div>
+    <>
+      <Header title="Rick and Morty API" />
+      <Characters />
+    </>
   );
 };
 export default App;
